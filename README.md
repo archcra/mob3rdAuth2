@@ -10,3 +10,7 @@ Thre purpose of this plugin:
 
 Only SinaWeibo and QQ auth supported now.
 
+
+
+Known issues:
+1. Registration not handled.

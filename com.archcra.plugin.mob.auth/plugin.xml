@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.archcra.plugin.mob.auth.MobAuth" version="0.0.1">
+    <name>MobAuth</name>
+    <description>The QQ login/out plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>QQ, login</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/mobAuth.js" name="MobAuth">
+        <clobbers target="MobAuth" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MobAuth">
+                <param name="android-package" value="com.archcra.plugin.mob.auth.MobAuth" />
+            </feature>
+        </config-file>
+        
+         <!-- drawable src/android/resources -->
+<resource-file src="src/android/res/drawable-hdpi/qq_login.9.png" target="res/drawable-hdpi/qq_login.9.png" />
+        <resource-file src="src/android/res/drawable-hdpi/msg_login.9.png" target="res/drawable-hdpi/msg_login.9.png" />
+        <resource-file src="src/android/res/drawable-hdpi/weibo_login.9.png" target="res/drawable-hdpi/weibo_login.9.png" />
+
+        
+         <resource-file src="src/android/res/drawable-hdpi/dialog_et_bg.9.png" target="res/drawable-hdpi/dialog_et_bg.9.png" />
+
+         <resource-file src="src/android/res/drawable-hdpi/et_bg.9.png" target="res/drawable-hdpi/et_bg.9.png" />
+ <resource-file src="src/android/res/drawable-hdpi/user_icon.9.png" target="res/drawable-hdpi/user_icon.9.png" />
+ <resource-file src="src/android/res/drawable-hdpi/other_login.9.png" target="res/drawable-hdpi/other_login.9.png" />
+ <resource-file src="src/android/res/drawable-hdpi/wechat_login.9.png" target="res/drawable-hdpi/wechat_login.9.png" />
+
+        
+        
+     <resource-file src="src/android/res/drawable-xhdpi/ic_launcher.png" target="res/drawable-xhdpi/ic_launcher.png" />    
+  
+           <resource-file src="src/android/res/drawable-xhdpi/checked.png" target="res/drawable-xhdpi/checked.png" />    
+           <resource-file src="src/android/res/drawable-xhdpi/tpl_title_back_arrow.png" target="res/drawable-xhdpi/tpl_title_back_arrow.png" />    
+        
+        
+                 <resource-file src="src/android/assets/ShareSDK.xml" target="assets/ShareSDK.xml" />
+
+        
+        
+        
+         <resource-file src="src/android/ssdk_strings.xml" target="res/values/ssdk_strings.xml" />
+          <resource-file src="src/android/styles.xml" target="res/values/styles.xml" />
+          <resource-file src="src/android/strings.xml" target="res/values/strings.xml" />
+        
+        <source-file src="src/android/FakeR.java" target-dir="src/com/synconset" />
+        
+        
+         <resource-file src="src/android/colors.xml" target="res/values/colors.xml" />
+        <resource-file src="src/android/tpl_login_page.xml" target="res/layout/tpl_login_page.xml" />
+
+        <source-file src="src/android/ShareSDK-Core-2.5.7.jar" target-dir="libs" />
+        <source-file src="src/android/ShareSDK-QQ-2.5.7.jar" target-dir="libs" />
+        <source-file src="src/android/ShareSDK-SinaWeibo-2.5.7.jar" target-dir="libs" />
+        <source-file src="src/android/OnLoginListener.java" target-dir="src/com/archcra/plugin/mob/auth" />
+        <source-file src="src/android/ThirdPartyLogin.java" target-dir="src/com/archcra/plugin/mob/auth" />
+        <source-file src="src/android/UserInfo.java" target-dir="src/com/archcra/plugin/mob/auth" />
+        <source-file src="src/android/MobAuth.java" target-dir="src/com/archcra/plugin/mob/auth" />
+    </platform>
+</plugin>
